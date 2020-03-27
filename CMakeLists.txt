@@ -696,7 +696,7 @@ set(kwin_WAYLAND_SRCS
 )
 
 add_executable(kwin_wayland ${kwin_WAYLAND_SRCS} ${kwin_XWAYLAND_SRCS})
-target_link_libraries(kwin_wayland kwin KF5::Crash)
+target_link_libraries(kwin_wayland ukui-kwin KF5::Crash)
 if (HAVE_LIBCAP)
     target_link_libraries(kwin_wayland ${Libcap_LIBRARIES})
 endif()
