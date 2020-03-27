@@ -30,7 +30,7 @@ target_link_libraries(KWinQpaPlugin
     ${QT5PLATFORMSUPPORT_LIBS}
     ${FREETYPE_LIBRARIES} # Must be after QT5PLATFORMSUPPORT_LIBS
     Fontconfig::Fontconfig
-    kwin
+    ukui-kwin
 )
 
 install(

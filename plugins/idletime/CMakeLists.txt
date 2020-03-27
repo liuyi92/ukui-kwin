@@ -7,7 +7,7 @@ set_target_properties(KF5IdleTimeKWinWaylandPrivatePlugin PROPERTIES LIBRARY_OUT
 target_link_libraries(KF5IdleTimeKWinWaylandPrivatePlugin
     KF5::IdleTime
     KF5::WaylandClient
-    kwin
+    ukui-kwin
 )
 
 install(

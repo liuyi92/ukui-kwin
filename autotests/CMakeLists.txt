@@ -373,7 +373,7 @@ add_executable(testX11TimestampUpdate test_x11_timestamp_update.cpp)
 target_link_libraries(testX11TimestampUpdate
     KF5::CoreAddons
     Qt5::Test
-    kwin
+    ukui-kwin
 )
 add_test(NAME kwin-testX11TimestampUpdate COMMAND testX11TimestampUpdate)
 ecm_mark_as_test(testX11TimestampUpdate)
