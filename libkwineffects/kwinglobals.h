@@ -195,14 +195,14 @@ UKUI_KWIN_EXPORT xcb_screen_t *defaultScreen()
 }
 
 inline
-KWIN_DEPRECATED_EXPORT int displayWidth()
+UKUI_KWIN_DEPRECATED_EXPORT int displayWidth()
 {
     xcb_screen_t *screen = defaultScreen();
     return screen ? screen->width_in_pixels : 0;
 }
 
 inline
-KWIN_DEPRECATED_EXPORT int displayHeight()
+UKUI_KWIN_DEPRECATED_EXPORT int displayHeight()
 {
     xcb_screen_t *screen = defaultScreen();
     return screen ? screen->height_in_pixels : 0;
