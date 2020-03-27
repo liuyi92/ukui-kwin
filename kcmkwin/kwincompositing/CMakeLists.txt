@@ -31,5 +31,5 @@ target_link_libraries(kwincompositing
     KF5::KCMUtils
 )
 
-install(TARGETS kwincompositing DESTINATION ${PLUGIN_INSTALL_DIR})
-install(FILES kwincompositing.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(TARGETS kwincompositing DESTINATION ${PLUGIN_INSTALL_DIR}/ukui-kwin)
+install(FILES kwincompositing.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ukui-kwin)

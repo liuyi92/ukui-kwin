@@ -32,7 +32,7 @@ kcoreaddons_desktop_to_json(kcm_kwin_virtualdesktops "kcm_kwin_virtualdesktops.d
 
 ########### install files ###############
 
-install(FILES virtualdesktopssettings.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
-install(TARGETS kcm_kwin_virtualdesktops DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
-install(FILES kcm_kwin_virtualdesktops.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR})
+install(FILES virtualdesktopssettings.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR}/ukui-kwin)
+install(TARGETS kcm_kwin_virtualdesktops DESTINATION ${KDE_INSTALL_PLUGINDIR}/ukui-kcms)
+install(FILES kcm_kwin_virtualdesktops.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR}/ukui-kwin)
 kpackage_install_package(package kcm_kwin_virtualdesktops ukui-kcms)

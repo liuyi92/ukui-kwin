@@ -23,6 +23,6 @@ target_link_libraries(kcm_kwin_scripts
     KF5::Package
 )
 
-install(TARGETS kcm_kwin_scripts DESTINATION ${PLUGIN_INSTALL_DIR})
-install(FILES kwinscripts.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(TARGETS kcm_kwin_scripts DESTINATION ${PLUGIN_INSTALL_DIR}/ukui-kwin)
+install(FILES kwinscripts.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ukui-kwin)
 install(FILES ukui-kwinscripts.knsrc DESTINATION ${KDE_INSTALL_KNSRCDIR})

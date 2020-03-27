@@ -49,8 +49,8 @@ add_library(kcm_kwinrules MODULE ${kcm_kwinrules_PART_SRCS})
 
 target_link_libraries(kcm_kwinrules ${kcm_libs} ${kwin_kcm_rules_XCB_LIBS})
 
-install(TARGETS kcm_kwinrules DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS kcm_kwinrules DESTINATION ${PLUGIN_INSTALL_DIR}/ukui-kwin)
 
 ########### install files ###############
 
-install(FILES kwinrules.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(FILES kwinrules.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ukui-kwin)

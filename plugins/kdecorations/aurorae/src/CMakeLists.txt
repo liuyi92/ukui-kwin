@@ -68,4 +68,4 @@ set(QMLFILES
 )
 install(FILES ${QMLFILES} DESTINATION ${QML_INSTALL_DIR}/org/ukui/kwin/decoration)
 file(COPY ${QMLFILES} DESTINATION ${CMAKE_BINARY_DIR}/bin/org/ukui/kwin/decoration/)
-install(FILES kwindecoration.desktop DESTINATION ${SERVICETYPES_INSTALL_DIR})
+install(FILES kwindecoration.desktop DESTINATION ${SERVICETYPES_INSTALL_DIR}/ukui-kwin)

@@ -25,9 +25,9 @@ target_link_libraries(kcm_kwindecoration
 kcoreaddons_desktop_to_json(kcm_kwindecoration "kwindecoration.desktop" SERVICE_TYPES kcmodule.desktop)
 
 # This desktop file is installed only for retrocompatibility with sycoca
-install(FILES kwindecorationsettings.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
-install(FILES kwindecoration.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
-install(FILES ukui-window-decorations.knsrc DESTINATION ${KDE_INSTALL_KNSRCDIR})
-install(TARGETS kcm_kwindecoration DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
+install(FILES kwindecorationsettings.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR}/ukui-kwin)
+install(FILES kwindecoration.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR}/ukui-kwin)
+install(FILES ukui-window-decorations.knsrc DESTINATION ${KDE_INSTALL_KNSRCDIR}/ukui-kwin)
+install(TARGETS kcm_kwindecoration DESTINATION ${KDE_INSTALL_PLUGINDIR}/ukui-kcms)
 
 kpackage_install_package(package kcm_kwindecoration ukui-kcms)
