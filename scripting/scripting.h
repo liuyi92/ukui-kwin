@@ -56,7 +56,7 @@ class ScriptUnloaderAgent;
 class QtScriptWorkspaceWrapper;
 class X11Client;
 
-class KWIN_EXPORT AbstractScript : public QObject
+class UKUI_KWIN_EXPORT AbstractScript : public QObject
 {
     Q_OBJECT
 public:
@@ -333,7 +333,7 @@ private:
 /**
  * The heart of KWin::Scripting. Infinite power lies beyond
  */
-class KWIN_EXPORT Scripting : public QObject
+class UKUI_KWIN_EXPORT Scripting : public QObject
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.kwin.Scripting")

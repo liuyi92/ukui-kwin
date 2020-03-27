@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 namespace KWin
 {
 
-class KWIN_EXPORT ModifierOnlyShortcuts : public QObject, public InputEventSpy
+class UKUI_KWIN_EXPORT ModifierOnlyShortcuts : public QObject, public InputEventSpy
 {
     Q_OBJECT
 public:

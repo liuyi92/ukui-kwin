@@ -49,7 +49,7 @@ namespace Server
 namespace KWin
 {
 
-class KWIN_EXPORT Xkb : public QObject
+class UKUI_KWIN_EXPORT Xkb : public QObject
 {
     Q_OBJECT
 public:

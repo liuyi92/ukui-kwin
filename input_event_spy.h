@@ -45,7 +45,7 @@ class SwitchEvent;
  * Deleting an instance of InputEventSpy automatically uninstalls it from
  * InputRedirection.
  */
-class KWIN_EXPORT InputEventSpy
+class UKUI_KWIN_EXPORT InputEventSpy
 {
 public:
     InputEventSpy();

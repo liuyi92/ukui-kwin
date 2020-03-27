@@ -39,7 +39,7 @@ class ShmPool;
 namespace KWin
 {
 
-class KWIN_EXPORT WaylandCursorTheme : public QObject
+class UKUI_KWIN_EXPORT WaylandCursorTheme : public QObject
 {
     Q_OBJECT
 public:

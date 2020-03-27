@@ -30,7 +30,7 @@ namespace KWin
 {
 class Udev;
 
-class KWIN_EXPORT UdevDevice
+class UKUI_KWIN_EXPORT UdevDevice
 {
 public:
     UdevDevice(udev_device *device);
@@ -54,7 +54,7 @@ private:
     udev_device *m_device;
 };
 
-class KWIN_EXPORT UdevMonitor
+class UKUI_KWIN_EXPORT UdevMonitor
 {
 public:
     explicit UdevMonitor(Udev *udev);
@@ -72,7 +72,7 @@ private:
     udev_monitor *m_monitor;
 };
 
-class KWIN_EXPORT Udev
+class UKUI_KWIN_EXPORT Udev
 {
 public:
     Udev();

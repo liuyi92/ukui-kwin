@@ -35,7 +35,7 @@ class KStatusNotifierItem;
 namespace KWin
 {
 
-class KWIN_EXPORT VirtualKeyboard : public QObject
+class UKUI_KWIN_EXPORT VirtualKeyboard : public QObject
 {
     Q_OBJECT
 public:

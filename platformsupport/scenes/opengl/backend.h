@@ -49,7 +49,7 @@ class WindowPixmap;
  *
  * @author Martin Gräßlin <mgraesslin@kde.org>
  */
-class KWIN_EXPORT OpenGLBackend
+class UKUI_KWIN_EXPORT OpenGLBackend
 {
 public:
     OpenGLBackend();

@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 namespace KWin
 {
 
-class KWIN_EXPORT X11EventFilter
+class UKUI_KWIN_EXPORT X11EventFilter
 {
 public:
     /**

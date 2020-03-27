@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 namespace KWin
 {
 
-class KWIN_EXPORT AbstractOpenGLContextAttributeBuilder
+class UKUI_KWIN_EXPORT AbstractOpenGLContextAttributeBuilder
 {
 public:
     virtual ~AbstractOpenGLContextAttributeBuilder() {

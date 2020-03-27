@@ -34,7 +34,7 @@ namespace KWin
 /**
  * X11 output representation
  */
-class KWIN_EXPORT X11Output : public AbstractOutput
+class UKUI_KWIN_EXPORT X11Output : public AbstractOutput
 {
     Q_OBJECT
 

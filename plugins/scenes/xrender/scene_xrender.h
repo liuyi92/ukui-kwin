@@ -341,7 +341,7 @@ private:
     XRenderPicture* m_pictures[int(DecorationPart::Count)];
 };
 
-class KWIN_EXPORT XRenderFactory : public SceneFactory
+class UKUI_KWIN_EXPORT XRenderFactory : public SceneFactory
 {
     Q_OBJECT
     Q_INTERFACES(KWin::SceneFactory)

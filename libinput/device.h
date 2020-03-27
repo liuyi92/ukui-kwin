@@ -38,7 +38,7 @@ namespace LibInput
 {
 enum class ConfigKey;
 
-class KWIN_EXPORT Device : public QObject
+class UKUI_KWIN_EXPORT Device : public QObject
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.KWin.InputDevice")

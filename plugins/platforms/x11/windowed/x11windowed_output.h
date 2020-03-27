@@ -38,7 +38,7 @@ class X11WindowedBackend;
 /**
  * Wayland outputs in a nested X11 setup
  */
-class KWIN_EXPORT X11WindowedOutput : public AbstractWaylandOutput
+class UKUI_KWIN_EXPORT X11WindowedOutput : public AbstractWaylandOutput
 {
     Q_OBJECT
 public:

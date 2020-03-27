@@ -65,7 +65,7 @@ class Renderer;
 class DecoratedClientImpl;
 }
 
-class KWIN_EXPORT Outputs : public QVector<AbstractOutput*>
+class UKUI_KWIN_EXPORT Outputs : public QVector<AbstractOutput*>
 {
 public:
     Outputs(){};
@@ -76,7 +76,7 @@ public:
     }
 };
 
-class KWIN_EXPORT Platform : public QObject
+class UKUI_KWIN_EXPORT Platform : public QObject
 {
     Q_OBJECT
 public:

@@ -52,7 +52,7 @@ namespace KWin
 /**
  * Generic output representation in a Wayland session
  */
-class KWIN_EXPORT AbstractWaylandOutput : public AbstractOutput
+class UKUI_KWIN_EXPORT AbstractWaylandOutput : public AbstractOutput
 {
     Q_OBJECT
 public:

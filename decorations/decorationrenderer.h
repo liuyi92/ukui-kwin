@@ -35,7 +35,7 @@ namespace Decoration
 
 class DecoratedClientImpl;
 
-class KWIN_EXPORT Renderer : public QObject
+class UKUI_KWIN_EXPORT Renderer : public QObject
 {
     Q_OBJECT
 public:

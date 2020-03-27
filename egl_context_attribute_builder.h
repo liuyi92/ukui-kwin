@@ -24,13 +24,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 namespace KWin
 {
 
-class KWIN_EXPORT EglContextAttributeBuilder : public AbstractOpenGLContextAttributeBuilder
+class UKUI_KWIN_EXPORT EglContextAttributeBuilder : public AbstractOpenGLContextAttributeBuilder
 {
 public:
     std::vector<int> build() const override;
 };
 
-class KWIN_EXPORT EglOpenGLESContextAttributeBuilder : public AbstractOpenGLContextAttributeBuilder
+class UKUI_KWIN_EXPORT EglOpenGLESContextAttributeBuilder : public AbstractOpenGLContextAttributeBuilder
 {
 public:
     std::vector<int> build() const override;

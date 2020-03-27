@@ -66,7 +66,7 @@ Q_DECLARE_FLAGS(LoadEffectFlags, LoadEffectFlag)
  * to be queried at the same time. Thus the idea is to have one implementation per type and one
  * implementation which makes use of all of them and combines the loading.
  */
-class KWIN_EXPORT AbstractEffectLoader : public QObject
+class UKUI_KWIN_EXPORT AbstractEffectLoader : public QObject
 {
     Q_OBJECT
 public:
@@ -301,7 +301,7 @@ private:
 /**
  * @brief Can load scripted Effects
  */
-class KWIN_EXPORT ScriptedEffectLoader : public AbstractEffectLoader
+class UKUI_KWIN_EXPORT ScriptedEffectLoader : public AbstractEffectLoader
 {
     Q_OBJECT
 public:

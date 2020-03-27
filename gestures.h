@@ -181,7 +181,7 @@ private:
     QSizeF m_minimumDelta;
 };
 
-class KWIN_EXPORT GestureRecognizer : public QObject
+class UKUI_KWIN_EXPORT GestureRecognizer : public QObject
 {
     Q_OBJECT
 public:

@@ -87,7 +87,7 @@ enum NightColorMode {
  *
  * With the Constant mode, screen color temperature is always constant.
  */
-class KWIN_EXPORT Manager : public QObject
+class UKUI_KWIN_EXPORT Manager : public QObject
 {
     Q_OBJECT
 

@@ -169,7 +169,7 @@ private:
 * It creates the connection to the Wayland Compositor, sets up the registry and creates
 * the Wayland output surfaces and its shell mappings.
 */
-class KWIN_EXPORT WaylandBackend : public Platform
+class UKUI_KWIN_EXPORT WaylandBackend : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)

@@ -31,7 +31,7 @@ namespace KWin
  * @short Profiler to detect whether we have triple buffering
  * The strategy is to start setBlocksForRetrace(false) but assume blocking and have the system prove that assumption wrong
  */
-class KWIN_EXPORT SwapProfiler
+class UKUI_KWIN_EXPORT SwapProfiler
 {
 public:
     SwapProfiler();

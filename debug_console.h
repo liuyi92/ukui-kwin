@@ -45,7 +45,7 @@ class XdgShellClient;
 class Unmanaged;
 class DebugConsoleFilter;
 
-class KWIN_EXPORT DebugConsoleModel : public QAbstractItemModel
+class UKUI_KWIN_EXPORT DebugConsoleModel : public QAbstractItemModel
 {
     Q_OBJECT
 public:
@@ -96,7 +96,7 @@ public:
     QString displayText(const QVariant &value, const QLocale &locale) const override;
 };
 
-class KWIN_EXPORT DebugConsole : public QWidget
+class UKUI_KWIN_EXPORT DebugConsole : public QWidget
 {
     Q_OBJECT
 public:

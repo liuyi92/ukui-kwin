@@ -32,7 +32,7 @@ namespace KWin
 {
 class VirtualOutput;
 
-class KWIN_EXPORT VirtualBackend : public Platform
+class UKUI_KWIN_EXPORT VirtualBackend : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)

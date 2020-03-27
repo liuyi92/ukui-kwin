@@ -35,7 +35,7 @@ class WindowSelector;
 class X11EventFilter;
 class X11Output;
 
-class KWIN_EXPORT X11StandalonePlatform : public Platform
+class UKUI_KWIN_EXPORT X11StandalonePlatform : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)

@@ -126,7 +126,7 @@ private:
     KWIN_SINGLETON(Outline)
 };
 
-class KWIN_EXPORT OutlineVisual
+class UKUI_KWIN_EXPORT OutlineVisual
 {
 public:
     OutlineVisual(Outline *outline);

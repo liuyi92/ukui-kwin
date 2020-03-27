@@ -37,7 +37,7 @@ namespace KWin
 {
 class X11WindowedOutput;
 
-class KWIN_EXPORT X11WindowedBackend : public Platform
+class UKUI_KWIN_EXPORT X11WindowedBackend : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)

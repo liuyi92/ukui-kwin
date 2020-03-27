@@ -31,7 +31,7 @@ class KStatusNotifierItem;
 namespace KWin
 {
 
-class KWIN_EXPORT OrientationSensor : public QObject
+class UKUI_KWIN_EXPORT OrientationSensor : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(bool userEnabled READ isUserEnabled WRITE setUserEnabled NOTIFY userEnabledChanged)

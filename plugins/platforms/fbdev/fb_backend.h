@@ -40,7 +40,7 @@ public:
     void init(const QSize &pixelSize, const QSize &physicalSize);
 };
 
-class KWIN_EXPORT FramebufferBackend : public Platform
+class UKUI_KWIN_EXPORT FramebufferBackend : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)
