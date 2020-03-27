@@ -755,7 +755,7 @@ kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 include(CMakePackageConfigHelpers)
-set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KWinDBusInterface")
+set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/ukui-kwin/KWinDBusInterface")
 configure_package_config_file(KWinDBusInterfaceConfig.cmake.in
     "${CMAKE_CURRENT_BINARY_DIR}/KWinDBusInterfaceConfig.cmake"
     PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
