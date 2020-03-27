@@ -1,0 +1,67 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=UKUIKWin/Script
+
+Comment=UKUIKWin Script
+Comment[bs]=UKUIKWin skripta
+Comment[ca]=Script del UKUIKWin
+Comment[ca@valencia]=Script de UKUIKWin
+Comment[cs]=Skript UKUIKWinu
+Comment[da]=UKUIKWin-script
+Comment[de]=UKUIKWin-Skript
+Comment[el]=Σενάριο UKUIKWin
+Comment[en_GB]=UKUIKWin Script
+Comment[es]=Guion de UKUIKWin
+Comment[et]=UKUIKWini skript
+Comment[eu]=UKUIKWin scripta
+Comment[fi]=UKUIKWin-skripti
+Comment[fr]=Script UKUIKWin
+Comment[ga]=Script UKUIKWin
+Comment[gl]=Script de UKUIKWin
+Comment[he]=תוספים של UKUIKWin
+Comment[hu]=UKUIKWin parancsfájl
+Comment[ia]=Script de ukui-kwin
+Comment[id]=Skrip UKUIKWin
+Comment[it]=Script ukui-kwin
+Comment[ja]=UKUIKWin Script
+Comment[kk]=UKUIKWin скрипті
+Comment[km]=ស្គ្រីប UKUIKWin
+Comment[ko]=UKUIKWin 스크립트
+Comment[lt]=UKUIKWin scenarijus
+Comment[mr]=के-विन स्क्रिप्ट
+Comment[nb]=UKUIKWin-skript
+Comment[nds]=UKUIKWin-Skript
+Comment[nl]=UKUIKWin-script
+Comment[nn]=UKUIKWin-skript
+Comment[pa]=UKUIKWin ਸਕ੍ਰਿਪਟ
+Comment[pl]=Skrypt UKUIKWin
+Comment[pt]=Programa do UKUIKWin
+Comment[pt_BR]=Script do UKUIKWin
+Comment[ro]=Script UKUIKWin
+Comment[ru]=Сценарий UKUIKWin
+Comment[sk]=UKUIKWin skript
+Comment[sl]=Skript UKUIKWin
+Comment[sr]=К‑винова скрипта
+Comment[sr@ijekavian]=К‑винова скрипта
+Comment[sr@ijekavianlatin]=UKUIKWinova skripta
+Comment[sr@latin]=UKUIKWinova skripta
+Comment[sv]=UKUIKwin-skript
+Comment[tr]=UKUIKWin Betiği
+Comment[ug]=UKUIKWin قوليازما
+Comment[uk]=Скрипт UKUIKWin
+Comment[vi]=Tập lệnh UKUIKWin
+Comment[x-test]=xxUKUIKWin Scriptxx
+Comment[zh_CN]=UKUIKWin 脚本
+Comment[zh_TW]=UKUIKWin 文稿
+
+[PropertyDef::X-Plasma-API]
+Type=QString
+
+[PropertyDef::X-Plasma-MainScript]
+Type=QString
+
+[PropertyDef::X-UKUIKWin-Exclude-Listing]
+Type=bool
+
+[PropertyDef::X-UKUIKWin-Border-Activate]
+Type=bool

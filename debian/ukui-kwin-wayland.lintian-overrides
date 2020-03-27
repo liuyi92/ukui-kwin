@@ -1,0 +1,2 @@
+ukwm2-wayland: binary-without-manpage usr/bin/ukwm2_wayland
+ukwm2-wayland: postinst-must-call-ldconfig usr/lib/*/libkdeinit5_ukwm2_wayland.so

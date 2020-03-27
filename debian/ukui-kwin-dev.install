@@ -1,0 +1,9 @@
+usr/include/ukwm2*.h
+usr/lib/*/cmake/UKWm2DBusInterface/
+usr/lib/*/libukwm24_effect_builtins.so
+usr/lib/*/libukwm2effects.so
+usr/lib/*/libukwm2gl*utils.so
+usr/lib/*/libukwm2xrenderutils.so
+usr/share/dbus-1/interfaces/org.ukui.UKWm2.VirtualDesktopManager.xml
+usr/share/dbus-1/interfaces/org.ukui.UKWm2.xml
+usr/share/dbus-1/interfaces/org.ukui.ukwm2.*
