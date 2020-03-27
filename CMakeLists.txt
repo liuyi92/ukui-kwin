@@ -659,12 +659,12 @@ generate_export_header(ukui-kwin EXPORT_FILE_NAME ukui-kwin_export.h)
 
 target_link_libraries(ukui-kwin kwinglutils ${epoxy_LIBRARY})
 
-kf5_add_kdeinit_executable(kwin_x11 main_x11.cpp)
-target_link_libraries(kdeinit_kwin_x11 ukui-kwin KF5::Crash Qt5::X11Extras)
+kf5_add_kdeinit_executable(ukui-kwin_x11 main_x11.cpp)
+target_link_libraries(kdeinit_ukui-kwin_x11 ukui-kwin KF5::Crash Qt5::X11Extras)
 
 install(TARGETS ukui-kwin ${INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
-install(TARGETS kdeinit_kwin_x11 ${INSTALL_TARGETS_DEFAULT_ARGS})
-install(TARGETS kwin_x11 ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS kdeinit_ukui-kwin_x11 ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS ukui-kwin_x11 ${INSTALL_TARGETS_DEFAULT_ARGS})
 
 set(kwin_XWAYLAND_SRCS
    ${CMAKE_CURRENT_SOURCE_DIR}/xwl/clipboard.cpp
