@@ -6,7 +6,7 @@ set(FBDEV_SOURCES
 
 add_library(KWinWaylandFbdevBackend MODULE ${FBDEV_SOURCES})
 set_target_properties(KWinWaylandFbdevBackend PROPERTIES LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/org.ukui.kwin.waylandbackends/")
-target_link_libraries(KWinWaylandFbdevBackend kwin SceneQPainterBackend)
+target_link_libraries(KWinWaylandFbdevBackend ukui-kwin SceneQPainterBackend)
 
 install(
     TARGETS
