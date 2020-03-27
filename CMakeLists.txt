@@ -695,20 +695,20 @@ set(kwin_WAYLAND_SRCS
    tabletmodemanager.cpp
 )
 
-add_executable(kwin_wayland ${kwin_WAYLAND_SRCS} ${kwin_XWAYLAND_SRCS})
-target_link_libraries(kwin_wayland ukui-kwin KF5::Crash)
+add_executable(ukui-kwin_wayland ${kwin_WAYLAND_SRCS} ${kwin_XWAYLAND_SRCS})
+target_link_libraries(ukui-kwin_wayland ukui-kwin KF5::Crash)
 if (HAVE_LIBCAP)
-    target_link_libraries(kwin_wayland ${Libcap_LIBRARIES})
+    target_link_libraries(ukui-kwin_wayland ${Libcap_LIBRARIES})
 endif()
 
-install(TARGETS kwin_wayland ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS ukui-kwin_wayland ${INSTALL_TARGETS_DEFAULT_ARGS})
 if (HAVE_LIBCAP)
     install(
     CODE "execute_process(
             COMMAND
                 ${SETCAP_EXECUTABLE}
                 CAP_SYS_NICE=+ep
-                \$ENV{DESTDIR}${CMAKE_INSTALL_FULL_BINDIR}/kwin_wayland)"
+                \$ENV{DESTDIR}${CMAKE_INSTALL_FULL_BINDIR}/ukui-kwin_wayland)"
     )
 endif()
 
