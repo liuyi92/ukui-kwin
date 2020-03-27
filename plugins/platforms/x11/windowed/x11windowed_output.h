@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KWIN_X11WINDOWED_OUTPUT_H
 
 #include "abstract_wayland_output.h"
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 #include <QObject>
 #include <QSize>

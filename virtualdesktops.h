@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KWIN_VIRTUAL_DESKTOPS_H
 // KWin
 #include <kwinglobals.h>
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 // Qt includes
 #include <QObject>
 #include <QPoint>

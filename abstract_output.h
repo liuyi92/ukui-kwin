@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef KWIN_ABSTRACT_OUTPUT_H
 #define KWIN_ABSTRACT_OUTPUT_H
 
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 #include <QObject>
 #include <QRect>

@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************/
 #ifndef KWIN_PLATFORM_H
 #define KWIN_PLATFORM_H
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 #include <kwinglobals.h>
 #include <epoxy/egl.h>
 #include <fixx11h.h>

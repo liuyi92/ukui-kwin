@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************/
 #ifndef KWIN_EFFECT_LOADER_H
 #define KWIN_EFFECT_LOADER_H
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 // KDE
 #include <KPluginMetaData>
 #include <KSharedConfig>

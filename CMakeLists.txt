@@ -730,7 +730,7 @@ install(
     DESTINATION
         ${KDE_INSTALL_DBUSINTERFACEDIR}
 )
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/kwin_export.h DESTINATION ${INCLUDE_INSTALL_DIR} COMPONENT Devel)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/ukui-kwin_export.h DESTINATION ${INCLUDE_INSTALL_DIR} COMPONENT Devel)
 
 # Install the KWin/Script service type
 install(FILES scripting/ukui-kwinscript.desktop DESTINATION ${SERVICETYPES_INSTALL_DIR})

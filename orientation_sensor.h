@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <KSharedConfig>
 
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 class QOrientationSensor;
 class KStatusNotifierItem;

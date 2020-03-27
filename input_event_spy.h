@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************/
 #ifndef KWIN_INPUT_EVENT_SPY_H
 #define KWIN_INPUT_EVENT_SPY_H
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 #include <QtGlobal>
 

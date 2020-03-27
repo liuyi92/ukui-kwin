@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef KWIN_DEBUG_CONSOLE_H
 #define KWIN_DEBUG_CONSOLE_H
 
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 #include <config-ukui-kwin.h>
 #include "input.h"
 #include "input_event_spy.h"

@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QObject>
 
 #include <kwinglobals.h>
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 #include <abstract_client.h>
 

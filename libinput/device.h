@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QMatrix4x4>
 #include <QSizeF>
 #include <QVector>
-#include "kwin_export.h"
+#include "ukui-kwin_export.h"
 
 struct libinput_device;
 

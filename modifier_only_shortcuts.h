@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KWIN_MODIFIER_ONLY_SHORTCUTS_H
 
 #include "input_event_spy.h"
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 #include <QObject>
 #include <QSet>

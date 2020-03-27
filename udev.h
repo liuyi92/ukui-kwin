@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef KWIN_UDEV_H
 #define KWIN_UDEV_H
 #include <memory>
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 struct udev;
 struct udev_device;

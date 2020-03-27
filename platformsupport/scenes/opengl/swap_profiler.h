@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KWIN_SCENE_OPENGL_SWAP_PROFILER_H
 
 #include <QElapsedTimer>
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 namespace KWin
 {

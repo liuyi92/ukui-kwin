@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KWIN_X11WINDOWED_BACKEND_H
 #include "platform.h"
 
-#include <kwin_export.h>
+#include <ukui-kwin_export.h>
 
 #include <QObject>
 #include <QSize>
