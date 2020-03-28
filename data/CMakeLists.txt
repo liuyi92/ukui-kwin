@@ -1,13 +1,13 @@
 add_subdirectory(icons)
 
 ########### next target ###############
-add_executable(kwin5_update_default_rules update_default_rules.cpp)
-target_link_libraries(kwin5_update_default_rules
+add_executable(ukui_kwin5_update_default_rules update_default_rules.cpp)
+target_link_libraries(ukui_kwin5_update_default_rules
     KF5::ConfigCore
     Qt5::Core
     Qt5::DBus
 )
-install(TARGETS kwin5_update_default_rules DESTINATION ${LIB_INSTALL_DIR}/kconf_update_bin/)
+install(TARGETS ukui_kwin5_update_default_rules DESTINATION ${LIB_INSTALL_DIR}/kconf_update_bin/)
 
 ########### install files ###############
 
