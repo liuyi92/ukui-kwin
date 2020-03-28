@@ -2,8 +2,8 @@ usr/lib/*/kconf_update_bin/ukui_kwin5_update_default_rules
 usr/lib/*/libexec/ukui_kwin*
 usr/lib/*/libkcmukuikwincommon.so.1*
 usr/lib/*/libkdeinit5_ukui_kwin_rules_dialog.so
-usr/lib/*/libukui_kwin.so.1
-usr/lib/*/libukui_kwin.so.1.*
+usr/lib/*/libukui-kwin.so.1
+usr/lib/*/libukui-kwin.so.1.*
 usr/lib/*/qt5/plugins/ukui-kwin/kcm_kwin*.so
 usr/lib/*/qt5/plugins/ukui-kcms/kcm_kwin_effects.so
 usr/lib/*/qt5/plugins/ukui-kcms/kcm_kwin_virtualdesktops.so
@@ -16,7 +16,7 @@ usr/lib/*/qt5/plugins/org.ukui.kdecoration2/kwin5_aurorae.so
 usr/lib/*/qt5/plugins/org.ukui.kglobalaccel5.platforms/KF5GlobalAccelPrivateKWin.so
 usr/lib/*/qt5/plugins/org.ukui.kwin.scenes/
 usr/lib/*/qt5/qml/org/ukui/kwin/
-usr/share/knsrcfiles/aurorae.knsrc
+usr/share/knsrcfiles/ukui-aurorae.knsrc
 usr/share/knsrcfiles/ukui-kwineffect.knsrc
 usr/share/knsrcfiles/ukui-kwinscripts.knsrc
 usr/share/knsrcfiles/ukui-kwinswitcher.knsrc
