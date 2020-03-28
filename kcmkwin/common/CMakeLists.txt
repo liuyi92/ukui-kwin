@@ -11,9 +11,9 @@ qt5_add_dbus_interface(kcmkwincommon_SRC
     ${UKUI_KWIN_SOURCE_DIR}/org.ukui.kwin.Effects.xml kwin_effects_interface
 )
 
-add_library(kcmkwincommon SHARED ${kcmkwincommon_SRC})
+add_library(ukuikcmkwincommon SHARED ${kcmkwincommon_SRC})
 
-target_link_libraries(kcmkwincommon
+target_link_libraries(ukuikcmkwincommon
     Qt5::Core
     Qt5::DBus
     KF5::CoreAddons
@@ -24,9 +24,9 @@ target_link_libraries(kcmkwincommon
     kwin4_effect_builtins
 )
 
-set_target_properties(kcmkwincommon PROPERTIES
+set_target_properties(ukuikcmkwincommon PROPERTIES
     VERSION ${PROJECT_VERSION}
     SOVERSION ${PROJECT_VERSION_MAJOR}
 )
 
-install(TARGETS kcmkwincommon ${INSTALL_TARGETS_DEFAULT_ARGS}/ukui-kwin LIBRARY NAMELINK_SKIP)
+install(TARGETS ukuikcmkwincommon ${INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
