@@ -56,7 +56,7 @@ void ScriptsPackage::pathChanged(KPackage::Package *package)
     }
 }
 
-K_EXPORT_KPACKAGE_PACKAGE_WITH_JSON(ScriptsPackage, "kwin-packagestructure-scripts.json")
+K_EXPORT_KPACKAGE_PACKAGE_WITH_JSON(ScriptsPackage, "ukui-kwin-packagestructure-scripts.json")
 
 #include "scripts.moc"
 
