@@ -40,7 +40,7 @@ Name[zh_CN]=KWin 装饰
 Name[zh_TW]=KWin 裝飾
 Type=Service
 X-KDE-ServiceTypes=KPackage/PackageStructure
-X-KDE-Library=kwin_packagestructure_decoration
+X-KDE-Library=ukui_kwin_packagestructure_decoration
 
 X-KDE-PluginInfo-Author=Demitrius Belai
 X-KDE-PluginInfo-Email=demitriusbelai@gmail.com

@@ -33,7 +33,7 @@ Name[zh_CN]=KWin 效果
 Name[zh_TW]=KWin 效果
 Type=Service
 X-KDE-ServiceTypes=KPackage/PackageStructure
-X-KDE-Library=kwin_packagestructure_effect
+X-KDE-Library=ukui_kwin_packagestructure_effect
 
 X-KDE-PluginInfo-Author=Vlad Zahorodnii
 X-KDE-PluginInfo-Email=vlad.zahorodnii@kde.org
