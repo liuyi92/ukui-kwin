@@ -742,9 +742,9 @@ if (BUILD_TESTING)
     add_subdirectory(tests)
 endif()
 
-if (KF5DocTools_FOUND)
-    add_subdirectory(doc)
-endif()
+#if (KF5DocTools_FOUND)
+#    add_subdirectory(doc)
+#endif()
 
 add_subdirectory(kconf_update)
 
@@ -767,6 +767,6 @@ find_package(KF5I18n CONFIG REQUIRED)
 ki18n_install(po)
 
   find_package(KF5DocTools CONFIG)
-  if(KF5DocTools_FOUND)
-    kdoctools_install(po)
-  endif()
+#  if(KF5DocTools_FOUND)
+#    kdoctools_install(po)
+#  endif()
