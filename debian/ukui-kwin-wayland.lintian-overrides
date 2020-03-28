@@ -1,2 +1,2 @@
-kwin-wayland: binary-without-manpage usr/bin/ukui-kwin_wayland
-kwin-wayland: postinst-must-call-ldconfig usr/lib/*/libkdeinit5_ukui-kwin_wayland.so
+ukui-kwin-wayland: binary-without-manpage usr/bin/ukui-kwin_wayland
+ukui-kwin-wayland: postinst-must-call-ldconfig usr/lib/*/libkdeinit5_ukui-kwin_wayland.so
