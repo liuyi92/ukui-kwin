@@ -22,7 +22,7 @@ target_link_libraries(kcm_kwin_effects
     KF5::QuickAddons
     KF5::XmlGui
 
-    ukuikcmkwincommon
+    kcmukuikwincommon
 )
 
 kcoreaddons_desktop_to_json(kcm_kwin_effects "kcm_kwin_effects.desktop")

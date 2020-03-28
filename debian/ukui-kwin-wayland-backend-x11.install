@@ -1,1 +1,1 @@
-usr/lib/*/qt5/plugins/org.ukui.ukwm2.waylandbackends/UKWm2WaylandX11Backend.so
+usr/lib/*/qt5/plugins/org.ukui.kwin.waylandbackends/KWinWaylandX11Backend.so

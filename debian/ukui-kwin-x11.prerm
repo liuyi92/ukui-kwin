@@ -1,5 +1,5 @@
 #! /bin/sh
-# prerm script for ukwm2
+# prerm script for kwin
 #
 # see: dh_installdeb(1)
 
@@ -19,7 +19,7 @@ set -e
 
 case "$1" in
     remove)
-        update-alternatives --remove x-window-manager /usr/bin/ukwm2_x11
+        update-alternatives --remove x-window-manager /usr/bin/ukui-kwin_x11
     ;;
 
     upgrade|deconfigure)

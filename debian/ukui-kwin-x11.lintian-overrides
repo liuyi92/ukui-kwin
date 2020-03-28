@@ -1,5 +1,5 @@
-ukwm2-x11: package-name-doesnt-match-sonames libukuiinit5-ukwm2-x11
-ukwm2-x11: binary-without-manpage usr/bin/ukwm2_x11
-ukwm2-x11: shlib-without-versioned-soname usr/lib/*/libukuiinit5_ukwm2_x11.so libukuiinit5_ukwm2_x11.so
-ukwm2-x11: postinst-must-call-ldconfig usr/lib/*/libukuiinit5_ukwm2_x11.so
-ukwm2-x11: package-must-activate-ldconfig-trigger usr/lib/*/libukuiinit5_ukwm2_x11.so
+kwin-x11: package-name-doesnt-match-sonames libkdeinit5-ukui-kwin-x11
+kwin-x11: binary-without-manpage usr/bin/ukui-kwin_x11
+kwin-x11: shlib-without-versioned-soname usr/lib/*/libkdeinit5_ukui-kwin_x11.so libkdeinit5_ukui-kwin_x11.so
+kwin-x11: postinst-must-call-ldconfig usr/lib/*/libkdeinit5_ukui-kwin_x11.so
+kwin-x11: package-must-activate-ldconfig-trigger usr/lib/*/libkdeinit5_ukui-kwin_x11.so

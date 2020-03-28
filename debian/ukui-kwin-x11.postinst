@@ -1,5 +1,5 @@
 #! /bin/sh
-# postinst script for ukwm2
+# postinst script for kwin
 #
 # see: dh_installdeb(1)
 
@@ -19,8 +19,8 @@ set -e
 
 case "$1" in
     configure)
-        update-alternatives --remove x-window-manager /usr/bin/ukwm2
-	update-alternatives --install /usr/bin/x-window-manager x-window-manager /usr/bin/ukwm2_x11 50
+        update-alternatives --remove x-window-manager /usr/bin/ukui-kwin
+	update-alternatives --install /usr/bin/x-window-manager x-window-manager /usr/bin/ukui-kwin_x11 50
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

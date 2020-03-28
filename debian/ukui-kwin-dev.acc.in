@@ -6,26 +6,26 @@
 </version>
 
 <headers>
-    /usr/include/ukwm2_export.h
-    /usr/include/ukwm2animationeffect.h
-    /usr/include/ukwm2config.h
-    /usr/include/ukwm2effects.h
-    /usr/include/ukwm2effects_export.h
-    /usr/include/ukwm2globals.h
-    /usr/include/ukwm2glplatform.h
-    /usr/include/ukwm2gltexture.h
-    /usr/include/ukwm2glutils.h
-    /usr/include/ukwm2glutils_export.h
-    /usr/include/ukwm2glutils_funcs.h
-    /usr/include/ukwm2xrenderutils.h
-    /usr/include/ukwm2xrenderutils_export.h
+    /usr/include/ukui-kwin/kwin_export.h
+    /usr/include/ukui-kwin/kwinanimationeffect.h
+    /usr/include/ukui-kwin/kwinconfig.h
+    /usr/include/ukui-kwin/kwineffects.h
+    /usr/include/ukui-kwin/kwineffects_export.h
+    /usr/include/ukui-kwin/kwinglobals.h
+    /usr/include/ukui-kwin/kwinglplatform.h
+    /usr/include/ukui-kwin/kwingltexture.h
+    /usr/include/ukui-kwin/kwinglutils.h
+    /usr/include/ukui-kwin/kwinglutils_export.h
+    /usr/include/ukui-kwin/kwinglutils_funcs.h
+    /usr/include/ukui-kwin/kwinxrenderutils.h
+    /usr/include/ukui-kwin/kwinxrenderutils_export.h
 </headers>
 
 <libs>
-    /usr/lib/@@DEB_HOST_MULTIARCH@@/libukwm24_effect_builtins.so
-    /usr/lib/@@DEB_HOST_MULTIARCH@@/libukwm2effects.so
-    /usr/lib/@@DEB_HOST_MULTIARCH@@/libukwm2glutils.so
-    /usr/lib/@@DEB_HOST_MULTIARCH@@/libukwm2xrenderutils.so
+    /usr/lib/@@DEB_HOST_MULTIARCH@@/libukui-kwin4_effect_builtins.so
+    /usr/lib/@@DEB_HOST_MULTIARCH@@/libukui-kwineffects.so
+    /usr/lib/@@DEB_HOST_MULTIARCH@@/libukui-kwinglutils.so
+    /usr/lib/@@DEB_HOST_MULTIARCH@@/libukui-kwinxrenderutils.so
 </libs>
 
 <gcc_options>
