@@ -44,7 +44,7 @@ class UKUI_KWIN_EXPORT FramebufferBackend : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)
-    Q_PLUGIN_METADATA(IID "org.kde.kwin.Platform" FILE "fbdev.json")
+    Q_PLUGIN_METADATA(IID "org.ukui.kwin.Platform" FILE "fbdev.json")
 public:
     explicit FramebufferBackend(QObject *parent = nullptr);
     ~FramebufferBackend() override;

@@ -319,7 +319,7 @@ class UKUI_KWIN_EXPORT OpenGLFactory : public SceneFactory
 {
     Q_OBJECT
     Q_INTERFACES(KWin::SceneFactory)
-    Q_PLUGIN_METADATA(IID "org.kde.kwin.Scene" FILE "opengl.json")
+    Q_PLUGIN_METADATA(IID "org.ukui.kwin.Scene" FILE "opengl.json")
 
 public:
     explicit OpenGLFactory(QObject *parent = nullptr);

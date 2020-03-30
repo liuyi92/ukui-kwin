@@ -37,7 +37,7 @@ DesktopEffectsKCM::DesktopEffectsKCM(QObject *parent, const QVariantList &args)
     : KQuickAddons::ConfigModule(parent, args)
     , m_model(new EffectsModel(this))
 {
-    qmlRegisterType<EffectsFilterProxyModel>("org.kde.private.kcms.kwin.effects", 1, 0, "EffectsFilterProxyModel");
+    qmlRegisterType<EffectsFilterProxyModel>("org.kde.private.kcms.ukui.effects", 1, 0, "EffectsFilterProxyModel");
 
     auto about = new KAboutData(
         QStringLiteral("kcm_kwin_effects"),

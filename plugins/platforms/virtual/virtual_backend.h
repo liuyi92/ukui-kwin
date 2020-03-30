@@ -36,7 +36,7 @@ class UKUI_KWIN_EXPORT VirtualBackend : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)
-    Q_PLUGIN_METADATA(IID "org.kde.kwin.Platform" FILE "virtual.json")
+    Q_PLUGIN_METADATA(IID "org.ukui.kwin.Platform" FILE "virtual.json")
 
 public:
     VirtualBackend(QObject *parent = nullptr);

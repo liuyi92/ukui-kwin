@@ -73,9 +73,9 @@ KCMKWinDecoration::KCMKWinDecoration(QObject *parent, const QVariantList &argume
     qmlRegisterType<QSortFilterProxyModel>();
     qmlRegisterType<KWinDecorationSettings>();
 #else
-    qmlRegisterAnonymousType<QAbstractListModel>("org.kde.kwin.KWinDecoration", 1);
-    qmlRegisterAnonymousType<QSortFilterProxyModel>("org.kde.kwin.KWinDecoration", 1);
-    qmlRegisterAnonymousType<KWinDecorationSettings>("org.kde.kwin.KWinDecoration", 1);
+    qmlRegisterAnonymousType<QAbstractListModel>("org.ukui.kwin.KWinDecoration", 1);
+    qmlRegisterAnonymousType<QSortFilterProxyModel>("org.ukui.kwin.KWinDecoration", 1);
+    qmlRegisterAnonymousType<KWinDecorationSettings>("org.ukui.kwin.KWinDecoration", 1);
 #endif
     m_proxyThemesModel->setSourceModel(m_themesModel);
     m_proxyThemesModel->setFilterCaseSensitivity(Qt::CaseInsensitive);

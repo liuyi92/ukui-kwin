@@ -83,7 +83,7 @@ DBusInterface::~DBusInterface()
 {
     QDBusConnection::sessionBus().unregisterService(m_serviceName);
     // KApplication automatically also grabs org.kde.kwin, so it's often been used externally - ensure to free it as well
-    QDBusConnection::sessionBus().unregisterService(QStringLiteral("org.kde.kwin"));
+    QDBusConnection::sessionBus().unregisterService(QStringLiteral("org.ukui.kwin"));
     if (kwinApp()->x11Connection()) {
         xcb_delete_property(kwinApp()->x11Connection(), kwinApp()->x11RootWindow(), atoms->kwin_dbus_service);
     }

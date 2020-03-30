@@ -165,7 +165,7 @@ class UKUI_KWIN_EXPORT QPainterFactory : public SceneFactory
 {
     Q_OBJECT
     Q_INTERFACES(KWin::SceneFactory)
-    Q_PLUGIN_METADATA(IID "org.kde.kwin.Scene" FILE "qpainter.json")
+    Q_PLUGIN_METADATA(IID "org.ukui.kwin.Scene" FILE "qpainter.json")
 
 public:
     explicit QPainterFactory(QObject *parent = nullptr);

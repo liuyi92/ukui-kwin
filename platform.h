@@ -568,6 +568,6 @@ private:
 
 }
 
-Q_DECLARE_INTERFACE(KWin::Platform, "org.kde.kwin.Platform")
+Q_DECLARE_INTERFACE(KWin::Platform, "org.ukui.kwin.Platform")
 
 #endif

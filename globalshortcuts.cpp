@@ -154,7 +154,7 @@ GlobalShortcutsManager::~GlobalShortcutsManager()
 void GlobalShortcutsManager::init()
 {
     if (kwinApp()->shouldUseWaylandForCompositing()) {
-        qputenv("KGLOBALACCELD_PLATFORM", QByteArrayLiteral("org.kde.kwin"));
+        qputenv("KGLOBALACCELD_PLATFORM", QByteArrayLiteral("org.ukui.kwin"));
         m_kglobalAccel = new KGlobalAccelD(this);
         if (!m_kglobalAccel->init()) {
             qCDebug(KWIN_CORE) << "Init of kglobalaccel failed";

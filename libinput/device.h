@@ -41,7 +41,7 @@ enum class ConfigKey;
 class UKUI_KWIN_EXPORT Device : public QObject
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "org.kde.KWin.InputDevice")
+    Q_CLASSINFO("D-Bus Interface", "org.ukui.KWin.InputDevice")
     //
     // general
     Q_PROPERTY(bool keyboard READ isKeyboard CONSTANT)

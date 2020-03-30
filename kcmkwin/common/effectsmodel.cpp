@@ -355,8 +355,8 @@ void EffectsModel::loadPluginEffects(const KConfigGroup &kwinConfig, const KPlug
             }
         }
 
-        if (pluginEffect.rawData().contains("org.kde.kwin.effect")) {
-            const QJsonObject d(pluginEffect.rawData().value("org.kde.kwin.effect").toObject());
+        if (pluginEffect.rawData().contains("org.ukui.kwin.effect")) {
+            const QJsonObject d(pluginEffect.rawData().value("org.ukui.kwin.effect").toObject());
             effect.exclusiveGroup = d.value("exclusiveGroup").toString();
             effect.video = QUrl::fromUserInput(d.value("video").toString());
             effect.enabledByDefaultFunction = d.value("enabledByDefaultMethod").toBool();

@@ -466,7 +466,7 @@ UKUI_KWIN_EXPORT int kdemain(int argc, char * argv[])
     }
 
     // find and load the X11 platform plugin
-    const auto plugins = KPluginLoader::findPluginsById(QStringLiteral("org.kde.kwin.platforms"),
+    const auto plugins = KPluginLoader::findPluginsById(QStringLiteral("org.ukui.kwin.platforms"),
                                                         QStringLiteral("KWinX11Platform"));
     if (plugins.isEmpty()) {
         std::cerr << "FATAL ERROR: KWin could not find the KWinX11Platform plugin" << std::endl;

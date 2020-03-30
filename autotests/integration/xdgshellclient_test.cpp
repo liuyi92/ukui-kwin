@@ -815,11 +815,11 @@ void TestXdgShellClient::testDesktopFileName()
     QScopedPointer<Surface> surface(Test::createSurface());
     // only xdg-shell as ShellSurface misses the setter
     QScopedPointer<XdgShellSurface> shellSurface(Test::createXdgShellStableSurface(surface.data()));
-    shellSurface->setAppId(QByteArrayLiteral("org.kde.foo"));
+    shellSurface->setAppId(QByteArrayLiteral("org.ukui.foo"));
     auto c = Test::renderAndWaitForShown(surface.data(), QSize(100, 50), Qt::blue);
     QVERIFY(c);
-    QCOMPARE(c->desktopFileName(), QByteArrayLiteral("org.kde.foo"));
-    QCOMPARE(c->resourceClass(), QByteArrayLiteral("org.kde.foo"));
+    QCOMPARE(c->desktopFileName(), QByteArrayLiteral("org.ukui.foo"));
+    QCOMPARE(c->resourceClass(), QByteArrayLiteral("org.ukui.foo"));
     QVERIFY(c->resourceName().startsWith("testXdgShellClient"));
     // the desktop file does not exist, so icon should be generic Wayland
     QCOMPARE(c->icon().name(), QStringLiteral("wayland"));
@@ -828,10 +828,10 @@ void TestXdgShellClient::testDesktopFileName()
     QVERIFY(desktopFileNameChangedSpy.isValid());
     QSignalSpy iconChangedSpy(c, &XdgShellClient::iconChanged);
     QVERIFY(iconChangedSpy.isValid());
-    shellSurface->setAppId(QByteArrayLiteral("org.kde.bar"));
+    shellSurface->setAppId(QByteArrayLiteral("org.ukui.bar"));
     QVERIFY(desktopFileNameChangedSpy.wait());
-    QCOMPARE(c->desktopFileName(), QByteArrayLiteral("org.kde.bar"));
-    QCOMPARE(c->resourceClass(), QByteArrayLiteral("org.kde.bar"));
+    QCOMPARE(c->desktopFileName(), QByteArrayLiteral("org.ukui.bar"));
+    QCOMPARE(c->resourceClass(), QByteArrayLiteral("org.ukui.bar"));
     QVERIFY(c->resourceName().startsWith("testXdgShellClient"));
     // icon should still be wayland
     QCOMPARE(c->icon().name(), QStringLiteral("wayland"));

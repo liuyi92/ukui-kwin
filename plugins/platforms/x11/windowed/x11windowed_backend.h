@@ -41,7 +41,7 @@ class UKUI_KWIN_EXPORT X11WindowedBackend : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)
-    Q_PLUGIN_METADATA(IID "org.kde.kwin.Platform" FILE "x11.json")
+    Q_PLUGIN_METADATA(IID "org.ukui.kwin.Platform" FILE "x11.json")
     Q_PROPERTY(QSize size READ screenSize NOTIFY sizeChanged)
 public:
     X11WindowedBackend(QObject *parent = nullptr);

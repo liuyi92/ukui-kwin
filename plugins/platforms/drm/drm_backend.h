@@ -59,7 +59,7 @@ class UKUI_KWIN_EXPORT DrmBackend : public Platform
 {
     Q_OBJECT
     Q_INTERFACES(KWin::Platform)
-    Q_PLUGIN_METADATA(IID "org.kde.kwin.Platform" FILE "drm.json")
+    Q_PLUGIN_METADATA(IID "org.ukui.kwin.Platform" FILE "drm.json")
 public:
     explicit DrmBackend(QObject *parent = nullptr);
     ~DrmBackend() override;

@@ -696,6 +696,6 @@ const QSize &WindowPixmap::size() const
 
 } // namespace
 
-Q_DECLARE_INTERFACE(KWin::SceneFactory, "org.kde.kwin.Scene")
+Q_DECLARE_INTERFACE(KWin::SceneFactory, "org.ukui.kwin.Scene")
 
 #endif
