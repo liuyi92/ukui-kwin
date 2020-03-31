@@ -23,7 +23,7 @@
 
 void DecorationPackage::initPackage(KPackage::Package *package)
 {
-    package->setDefaultPackageRoot(QStringLiteral("kwin/decorations/"));
+    package->setDefaultPackageRoot(QStringLiteral("ukui-kwin/decorations/"));
 
     package->addDirectoryDefinition("config", QStringLiteral("config"), i18n("Configuration Definitions"));
     QStringList mimetypes;

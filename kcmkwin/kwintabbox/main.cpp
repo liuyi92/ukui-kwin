@@ -66,7 +66,7 @@ KWinTabBoxConfigForm::KWinTabBoxConfigForm(QWidget* parent)
 
 KWinTabBoxConfig::KWinTabBoxConfig(QWidget* parent, const QVariantList& args)
     : KCModule(parent, args)
-    , m_config(KSharedConfig::openConfig("kwinrc"))
+    , m_config(KSharedConfig::openConfig("ukui-kwinrc"))
 {
     QTabWidget* tabWidget = new QTabWidget(this);
     m_primaryTabBoxUi = new KWinTabBoxConfigForm(tabWidget);
@@ -101,8 +101,8 @@ KWinTabBoxConfig::KWinTabBoxConfig(QWidget* parent, const QVariantList& args)
     connect(_BTN_, SIGNAL(keySequenceChanged(QKeySequence)), SLOT(shortcutChanged(QKeySequence)))
 
     // Shortcut config. The shortcut belongs to the component "kwin"!
-    m_actionCollection = new KActionCollection(this, QStringLiteral("kwin"));
-    m_actionCollection->setComponentDisplayName(i18n("KWin"));
+    m_actionCollection = new KActionCollection(this, QStringLiteral("ukui-kwin"));
+    m_actionCollection->setComponentDisplayName(i18n("UKUI-KWin"));
     m_actionCollection->setConfigGroup("Navigation");
     m_actionCollection->setConfigGlobal(true);
     QAction* a;
@@ -190,7 +190,7 @@ static QList<KPackage::Package> availableLnFPackages()
         pkg.setFallbackPackage(KPackage::Package());
         if (!pkg.filePath("defaults").isEmpty()) {
             KSharedConfigPtr conf = KSharedConfig::openConfig(pkg.filePath("defaults"));
-            KConfigGroup cg = KConfigGroup(conf, "kwinrc");
+            KConfigGroup cg = KConfigGroup(conf, "ukui-kwinrc");
             cg = KConfigGroup(&cg, "WindowSwitcher");
             if (!cg.readEntry("LayoutName", QString()).isEmpty()) {
                 packages << pkg;
@@ -229,7 +229,7 @@ void KWinTabBoxConfig::initLayoutLists()
         }
         const QString scriptName = offer.value("X-Plasma-MainScript");
         const QString scriptFile = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
-                                                          QLatin1String("kwin/tabbox/") + pluginName + QLatin1String("/contents/")
+                                                          QLatin1String("ukui-kwin/tabbox/") + pluginName + QLatin1String("/contents/")
                                                           + scriptName);
         if (scriptFile.isNull()) {
             continue;
@@ -548,7 +548,7 @@ void KWinTabBoxConfig::configureEffectClicked()
 
         const QString name = BuiltInEffects::nameForEffect(effect == CoverSwitch ? BuiltInEffect::CoverSwitch : BuiltInEffect::FlipSwitch);
 
-        KCModule *kcm = KPluginTrader::createInstanceFromQuery<KCModule>(QStringLiteral("kwin/effects/configs/"), QString(),
+        KCModule *kcm = KPluginTrader::createInstanceFromQuery<KCModule>(QStringLiteral("ukui-kwin/effects/configs/"), QString(),
                                                                          QStringLiteral("'%1' in [X-KDE-ParentComponents]").arg(name),
                                                                         configDialog);
         if (!kcm) {

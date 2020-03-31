@@ -41,7 +41,7 @@ class KFocusConfigStandalone : public KFocusConfig
     Q_OBJECT
 public:
     KFocusConfigStandalone(QWidget* parent, const QVariantList &)
-        : KFocusConfig(true, new KConfig("kwinrc"), parent)
+        : KFocusConfig(true, new KConfig("ukui-kwinrc"), parent)
     {}
 };
 
@@ -50,7 +50,7 @@ class KMovingConfigStandalone : public KMovingConfig
     Q_OBJECT
 public:
     KMovingConfigStandalone(QWidget* parent, const QVariantList &)
-        : KMovingConfig(true, new KConfig("kwinrc"), parent)
+        : KMovingConfig(true, new KConfig("ukui-kwinrc"), parent)
     {}
 };
 
@@ -59,14 +59,14 @@ class KAdvancedConfigStandalone : public KAdvancedConfig
     Q_OBJECT
 public:
     KAdvancedConfigStandalone(QWidget* parent, const QVariantList &)
-        : KAdvancedConfig(true, new KConfig("kwinrc"), parent)
+        : KAdvancedConfig(true, new KConfig("ukui-kwinrc"), parent)
     {}
 };
 
 KWinOptions::KWinOptions(QWidget *parent, const QVariantList &)
     : KCModule(parent)
 {
-    mConfig = new KConfig("kwinrc");
+    mConfig = new KConfig("ukui-kwinrc");
 
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
@@ -179,7 +179,7 @@ void KWinOptions::moduleChanged(bool state)
 KActionsOptions::KActionsOptions(QWidget *parent, const QVariantList &)
     : KCModule(parent)
 {
-    mConfig = new KConfig("kwinrc");
+    mConfig = new KConfig("ukui-kwinrc");
 
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);

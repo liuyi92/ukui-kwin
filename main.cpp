@@ -263,7 +263,7 @@ void Application::setupMalloc()
 
 void Application::setupLocalizedString()
 {
-    KLocalizedString::setApplicationDomain("kwin");
+    KLocalizedString::setApplicationDomain("ukui-kwin");
 }
 
 void Application::createWorkspace()

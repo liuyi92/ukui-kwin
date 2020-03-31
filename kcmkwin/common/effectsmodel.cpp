@@ -278,7 +278,7 @@ void EffectsModel::loadJavascriptEffects(const KConfigGroup &kwinConfig)
 {
     const auto plugins = KPackage::PackageLoader::self()->listPackages(
         QStringLiteral("KWin/Effect"),
-        QStringLiteral("kwin/effects")
+        QStringLiteral("ukui-kwin/effects")
     );
     for (const KPluginMetaData &metaData : plugins) {
         KPluginInfo plugin(metaData);
@@ -322,7 +322,7 @@ void EffectsModel::loadJavascriptEffects(const KConfigGroup &kwinConfig)
 void EffectsModel::loadPluginEffects(const KConfigGroup &kwinConfig, const KPluginInfo::List &configs)
 {
     const auto pluginEffects = KPluginLoader::findPlugins(
-        QStringLiteral("kwin/effects/plugins/"),
+        QStringLiteral("ukui-kwin/effects/plugins/"),
         [](const KPluginMetaData &data) {
             return data.serviceTypes().contains(QStringLiteral("KWin/Effect"));
         }
@@ -389,10 +389,10 @@ void EffectsModel::loadPluginEffects(const KConfigGroup &kwinConfig, const KPlug
 
 void EffectsModel::load(LoadOptions options)
 {
-    KConfigGroup kwinConfig(KSharedConfig::openConfig("kwinrc"), "Plugins");
+    KConfigGroup kwinConfig(KSharedConfig::openConfig("ukui-kwinrc"), "Plugins");
 
     m_pendingEffects.clear();
-    const KPluginInfo::List configs = KPluginTrader::self()->query(QStringLiteral("kwin/effects/configs/"));
+    const KPluginInfo::List configs = KPluginTrader::self()->query(QStringLiteral("ukui-kwin/effects/configs/"));
     loadBuiltInEffects(kwinConfig, configs);
     loadJavascriptEffects(kwinConfig);
     loadPluginEffects(kwinConfig, configs);
@@ -502,7 +502,7 @@ void EffectsModel::updateEffectStatus(const QModelIndex &rowIndex, Status effect
 
 void EffectsModel::save()
 {
-    KConfigGroup kwinConfig(KSharedConfig::openConfig("kwinrc"), "Plugins");
+    KConfigGroup kwinConfig(KSharedConfig::openConfig("ukui-kwinrc"), "Plugins");
 
     QVector<EffectData> dirtyEffects;
 
@@ -601,7 +601,7 @@ QModelIndex EffectsModel::findByPluginId(const QString &pluginId) const
 static KCModule *findBinaryConfig(const QString &pluginId, QObject *parent)
 {
     return KPluginTrader::createInstanceFromQuery<KCModule>(
-        QStringLiteral("kwin/effects/configs/"),
+        QStringLiteral("ukui-kwin/effects/configs/"),
         QString(),
         QStringLiteral("'%1' in [X-KDE-ParentComponents]").arg(pluginId),
         parent
@@ -611,7 +611,7 @@ static KCModule *findBinaryConfig(const QString &pluginId, QObject *parent)
 static KCModule *findScriptedConfig(const QString &pluginId, QObject *parent)
 {
     const auto offers = KPluginTrader::self()->query(
-        QStringLiteral("kwin/effects/configs/"),
+        QStringLiteral("ukui-kwin/effects/configs/"),
         QString(),
         QStringLiteral("[X-KDE-Library] == 'kcm_kwin4_genericscripted'")
     );

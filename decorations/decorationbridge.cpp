@@ -86,7 +86,7 @@ DecorationBridge::~DecorationBridge()
 QString DecorationBridge::readPlugin()
 {
     //Try to get a default from look and feel
-    KConfigGroup cg(m_lnfConfig, "kwinrc");
+    KConfigGroup cg(m_lnfConfig, "ukui-kwinrc");
     cg = KConfigGroup(&cg, "org.kde.kdecoration2");
     return kwinApp()->config()->group(s_pluginName).readEntry("library", cg.readEntry("library", s_defaultPlugin));
 }
@@ -99,7 +99,7 @@ static bool readNoPlugin()
 QString DecorationBridge::readTheme() const
 {
     //Try to get a default from look and feel
-    KConfigGroup cg(m_lnfConfig, "kwinrc");
+    KConfigGroup cg(m_lnfConfig, "ukui-kwinrc");
     cg = KConfigGroup(&cg, "org.kde.kdecoration2");
     return kwinApp()->config()->group(s_pluginName).readEntry("theme", cg.readEntry("theme", m_defaultTheme));
 }

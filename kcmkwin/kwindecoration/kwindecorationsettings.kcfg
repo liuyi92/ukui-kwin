@@ -4,7 +4,7 @@
       xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
       http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
   <include>config-ukui-kwin.h</include>
-  <kcfgfile name="kwinrc" />
+  <kcfgfile name="ukui-kwinrc" />
   <group name="org.kde.kdecoration2">
     <entry name="pluginName" key="library" type="String">
       <label>Plugin name</label>

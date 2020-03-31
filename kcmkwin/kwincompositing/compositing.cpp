@@ -49,7 +49,7 @@ Compositing::Compositing(QObject *parent)
     , m_openGLPlatformInterface(0)
     , m_windowsBlockCompositing(true)
     , m_compositingInterface(new OrgUkuiKwinCompositingInterface(QStringLiteral("org.ukui.KWin"), QStringLiteral("/Compositor"), QDBusConnection::sessionBus(), this))
-    , m_config(KSharedConfig::openConfig("kwinrc"))
+    , m_config(KSharedConfig::openConfig("ukui-kwinrc"))
 {
     reset();
     connect(this, &Compositing::animationSpeedChanged,       this, &Compositing::changed);

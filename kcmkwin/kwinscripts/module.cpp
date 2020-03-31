@@ -43,7 +43,7 @@
 Module::Module(QWidget *parent, const QVariantList &args) :
     KCModule(parent, args),
     ui(new Ui::Module),
-    m_kwinConfig(KSharedConfig::openConfig("kwinrc"))
+    m_kwinConfig(KSharedConfig::openConfig("ukui-kwinrc"))
 {
     KAboutData *about = new KAboutData("kwin-scripts",
                                        i18n("KWin Scripts"),
@@ -132,7 +132,7 @@ void Module::updateListViewContents()
         return true;
     };
 
-    const QString scriptFolder = QStringLiteral("kwin/scripts/");
+    const QString scriptFolder = QStringLiteral("ukui-kwin/scripts/");
     const auto scripts = KPackage::PackageLoader::self()->findPackages(QStringLiteral("KWin/Script"), scriptFolder, filter);
 
     QList<KPluginInfo> scriptinfos = KPluginInfo::fromMetaData(scripts.toVector());

@@ -44,7 +44,7 @@ KWinScreenEdgesConfigForm::KWinScreenEdgesConfigForm(QWidget* parent)
 
 KWinScreenEdgesConfig::KWinScreenEdgesConfig(QWidget* parent, const QVariantList& args)
     : KCModule(parent, args)
-    , m_config(KSharedConfig::openConfig("kwinrc"))
+    , m_config(KSharedConfig::openConfig("ukui-kwinrc"))
 {
     m_ui = new KWinScreenEdgesConfigForm(this);
     QVBoxLayout* layout = new QVBoxLayout(this);
@@ -148,7 +148,7 @@ void KWinScreenEdgesConfig::monitorInit()
     monitorAddItem(i18n("Toggle window switching"));
     monitorAddItem(i18n("Toggle alternative window switching"));
 
-    const QString scriptFolder = QStringLiteral("kwin/scripts/");
+    const QString scriptFolder = QStringLiteral("ukui-kwin/scripts/");
     const auto scripts = KPackage::PackageLoader::self()->listPackages(QStringLiteral("KWin/Script"), scriptFolder);
 
     KConfigGroup config(m_config, "Plugins");
