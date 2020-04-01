@@ -194,11 +194,11 @@ void UserActionsMenu::helperDialog(const QString& message, AbstractClient* clien
     } else
         abort();
     if (!type.isEmpty()) {
-        KConfig cfg(QStringLiteral("kwin_dialogsrc"));
+        KConfig cfg(QStringLiteral("ukui-kwin_dialogsrc"));
         KConfigGroup cg(&cfg, "Notification Messages");  // Depends on KMessageBox
         if (!cg.readEntry(type, true))
             return;
-        args << QStringLiteral("--dontagain") << QLatin1String("kwin_dialogsrc:") + type;
+        args << QStringLiteral("--dontagain") << QLatin1String("ukui-kwin_dialogsrc:") + type;
     }
     if (client)
         args << QStringLiteral("--embed") << QString::number(client->windowId());

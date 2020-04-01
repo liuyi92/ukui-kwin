@@ -39,7 +39,7 @@ namespace KWin
 
 static void loadRules(QList< Rules* >& rules)
 {
-    KConfig _cfg("kwinrulesrc", KConfig::NoGlobals);
+    KConfig _cfg("ukui-kwinrulesrc", KConfig::NoGlobals);
     KConfigGroup cfg(&_cfg, "General");
     int count = cfg.readEntry("count", 0);
     for (int i = 1;
@@ -53,7 +53,7 @@ static void loadRules(QList< Rules* >& rules)
 
 static void saveRules(const QList< Rules* >& rules)
 {
-    KConfig cfg("kwinrulesrc", KConfig::NoGlobals);
+    KConfig cfg("ukui-kwinrulesrc", KConfig::NoGlobals);
     QStringList groups = cfg.groupList();
     for (QStringList::ConstIterator it = groups.constBegin();
             it != groups.constEnd();
