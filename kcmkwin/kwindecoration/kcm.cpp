@@ -39,7 +39,7 @@
 
 #include "kwindecorationsettings.h"
 
-K_PLUGIN_FACTORY_WITH_JSON(KCMKWinDecorationFactory, "kwindecoration.json", registerPlugin<KCMKWinDecoration>();)
+K_PLUGIN_FACTORY_WITH_JSON(KCMKWinDecorationFactory, "ukuikwindecoration.json", registerPlugin<KCMKWinDecoration>();)
 
 Q_DECLARE_METATYPE(KDecoration2::BorderSize)
 
@@ -58,7 +58,7 @@ KCMKWinDecoration::KCMKWinDecoration(QObject *parent, const QVariantList &argume
     , m_availableButtonsModel(new KDecoration2::Preview::ButtonsModel(this))
     , m_settings(new KWinDecorationSettings(this))
 {
-    auto about = new KAboutData(QStringLiteral("kcm_kwindecoration"),
+    auto about = new KAboutData(QStringLiteral("kcm_ukuikwindecoration"),
                                 i18n("Window Decorations"),
                                 QStringLiteral("1.0"),
                                 QString(),

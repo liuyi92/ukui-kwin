@@ -1,11 +1,11 @@
 [Desktop Entry]
-Exec=kcmshell5 kwincompositing
+Exec=kcmshell5 ukuikwincompositing
 Icon=preferences-desktop
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=https://userbase.kde.org/Desktop_Effects_Performance#Advanced_Desktop_Effects_Settings
 
-X-KDE-Library=kwincompositing
+X-KDE-Library=ukuikwincompositing
 X-KDE-PluginKeyword=compositing
 X-KDE-ParentApp=kcontrol
 

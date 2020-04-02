@@ -20,7 +20,7 @@
 **************************************************************************/
 
 #include "compositing.h"
-#include <kwin_compositing_interface.h>
+#include <ukui_kwin_compositing_interface.h>
 
 #include <KCModuleProxy>
 #include <KConfigGroup>
