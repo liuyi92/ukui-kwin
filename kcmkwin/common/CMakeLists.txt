@@ -21,7 +21,7 @@ target_link_libraries(kcmukuikwincommon
     KF5::I18n
     KF5::Package
     KF5::KCMUtils
-    ukui-kwin4_effect_builtins
+    kwin4_effect_builtins
 )
 
 set_target_properties(kcmukuikwincommon PROPERTIES
