@@ -1287,8 +1287,8 @@ msgstr "桌面文件名"
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, desktopfile)
 #: ruleswidgetbase.ui:2557
 #, kde-format
-msgid "org.kde.kwin"
-msgstr "org.kde.kwin"
+msgid "org.ukui.kwin"
+msgstr "org.ukui.kwin"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enable_blockcompositing)
 #: ruleswidgetbase.ui:2571

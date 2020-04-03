@@ -219,10 +219,10 @@ void Helper::init()
             if (!fileInfo.isFile()) {
                 continue;
             }
-            if (!fileInfo.path().endsWith(QLatin1String("/org/kde/kwin/decoration"))) {
+            if (!fileInfo.path().endsWith(QLatin1String("/org/ukui/kwin/decoration"))) {
                 continue;
             }
-            if (fileInfo.fileName() == QLatin1String("libdecorationplugin.so")) {
+            if (fileInfo.fileName() == QLatin1String("libukui_decorationplugin.so")) {
                 pluginPath = fileInfo.absoluteFilePath();
                 break;
             }
@@ -231,8 +231,8 @@ void Helper::init()
             break;
         }
     }
-    m_engine->importPlugin(pluginPath, "org.kde.kwin.decoration", nullptr);
-    qmlRegisterType<KWin::Borders>("org.kde.kwin.decoration", 0, 1, "Borders");
+    m_engine->importPlugin(pluginPath, "org.ukui.kwin.decoration", nullptr);
+    qmlRegisterType<KWin::Borders>("org.ukui.kwin.decoration", 0, 1, "Borders");
 
     qmlRegisterType<KDecoration2::Decoration>();
     qmlRegisterType<KDecoration2::DecoratedClient>();

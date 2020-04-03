@@ -1,14 +1,14 @@
 {
     "KPlugin": {
-        "Id": "org.kde.kwin.aurorae", 
+        "Id": "org.ukui.kwin.aurorae", 
         "ServiceTypes": [
             "org.kde.kdecoration2"
         ]
     }, 
     "Type": "Service", 
-    "X-KDE-Library": "kwin5_aurorae", 
+    "X-KDE-Library": "ukui_kwin5_aurorae", 
     "X-KDE-PluginInfo-EnabledByDefault": true, 
-    "X-KDE-PluginInfo-Name": "org.kde.kwin.aurorae", 
+    "X-KDE-PluginInfo-Name": "org.ukui.kwin.aurorae", 
     "X-KDE-ServiceTypes": [
         "org.kde.kdecoration2"
     ], 

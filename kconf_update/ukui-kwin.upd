@@ -29,7 +29,7 @@ Key=dimscreenEnabled,ukui-kwin4_effect_dimscreenEnabled
 # Deactivate auto border size if the user has changed border size in the past
 Id=auto-bordersize
 File=ukui-kwinrc
-Group=org.ukui.kdecoration2
+Group=org.kde.kdecoration2
 Script=ukui-kwin-5.16-auto-bordersize.sh,sh
 
 # Move AnimationSpeed to kdeglobals as AnimationDurationFactor converting to a useful value
