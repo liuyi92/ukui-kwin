@@ -5,7 +5,7 @@ add_definitions(-DKCMRULES)
 
 include_directories(../../)
 set(ukuikwinrules_MOC_HDRS yesnobox.h ../../cursor.h ../../plugins/platforms/x11/standalone/x11cursor.h)
-qt5_wrap_cpp(ukuikwinrules_MOC_SRCS ${kwinrules_MOC_HDRS})
+qt5_wrap_cpp(ukuikwinrules_MOC_SRCS ${ukuikwinrules_MOC_HDRS})
 set(ukuikwinrules_SRCS ruleswidget.cpp ruleslist.cpp kwinsrc.cpp detectwidget.cpp ${ukuikwinrules_MOC_SRCS})
 
 ki18n_wrap_ui(ukuikwinrules_SRCS ruleslist.ui detectwidget.ui editshortcut.ui ruleswidgetbase.ui)
