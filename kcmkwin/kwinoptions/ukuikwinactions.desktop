@@ -2,12 +2,12 @@
 Icon=preferences-system-windows-action
 Type=Service
 X-KDE-ServiceTypes=KCModule
-Exec=kcmshell5 kwinactions
+Exec=kcmshell5 ukuikwinactions
 X-DocPath=kcontrol/windowbehaviour/index.html#titlebar-actions
 Icon=preferences-system-windows-actions
 
-X-KDE-Library=kcm_kwinoptions
-X-KDE-PluginKeyword=kwinactions
+X-KDE-Library=kcm_ukuikwinoptions
+X-KDE-PluginKeyword=ukuikwinactions
 
 Name=Window Actions
 Name[ca]=Accions de la finestra

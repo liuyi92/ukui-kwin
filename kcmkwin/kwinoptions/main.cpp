@@ -99,7 +99,7 @@ KWinOptions::KWinOptions(QWidget *parent, const QVariantList &)
     connect(mAdvanced, SIGNAL(changed(bool)), this, SLOT(moduleChanged(bool)));
 
     KAboutData *about =
-        new KAboutData(QStringLiteral("kcmkwinoptions"), i18n("Window Behavior Configuration Module"),
+        new KAboutData(QStringLiteral("ukuikcmkwinoptions"), i18n("Window Behavior Configuration Module"),
                        QString(), QString(), KAboutLicense::GPL,
                        i18n("(c) 1997 - 2002 KWin and KControl Authors"));
 
@@ -238,11 +238,11 @@ void KActionsOptions::moduleChanged(bool state)
 }
 
 K_PLUGIN_FACTORY_DEFINITION(KWinOptionsFactory,
-                            registerPlugin<KActionsOptions>("kwinactions");
-                            registerPlugin<KFocusConfigStandalone>("kwinfocus");
-                            registerPlugin<KMovingConfigStandalone>("kwinmoving");
-                            registerPlugin<KAdvancedConfigStandalone>("kwinadvanced");
-                            registerPlugin<KWinOptions>("kwinoptions");
+                            registerPlugin<KActionsOptions>("ukuikwinactions");
+                            registerPlugin<KFocusConfigStandalone>("ukuikwinfocus");
+                            registerPlugin<KMovingConfigStandalone>("ukuikwinmoving");
+                            registerPlugin<KAdvancedConfigStandalone>("ukuikwinadvanced");
+                            registerPlugin<KWinOptions>("ukuikwinoptions");
                            )
 
 #include "main.moc"

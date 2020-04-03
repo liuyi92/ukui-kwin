@@ -211,17 +211,17 @@ void UserActionsMenu::helperDialog(const QString& message, AbstractClient* clien
 QStringList configModules(bool controlCenter)
 {
     QStringList args;
-    args <<  QStringLiteral("kwindecoration");
+    args <<  QStringLiteral("ukuikwindecoration");
     if (controlCenter)
-        args << QStringLiteral("kwinoptions");
-    else if (KAuthorized::authorizeControlModule(QStringLiteral("kde-kwinoptions.desktop")))
-        args << QStringLiteral("kwinactions") << QStringLiteral("kwinfocus") <<  QStringLiteral("kwinmoving") << QStringLiteral("kwinadvanced")
-             << QStringLiteral("kwinrules") << QStringLiteral("kwincompositing") << QStringLiteral("kwineffects")
+        args << QStringLiteral("ukuikwinoptions");
+    else if (KAuthorized::authorizeControlModule(QStringLiteral("ukui-ukuikwinoptions.desktop")))
+        args << QStringLiteral("ukuikwinactions") << QStringLiteral("ukuikwinfocus") <<  QStringLiteral("ukuikwinmoving") << QStringLiteral("ukuikwinadvanced")
+             << QStringLiteral("ukuikwinrules") << QStringLiteral("ukuikwincompositing") << QStringLiteral("ukuikwineffects")
 #ifdef KWIN_BUILD_TABBOX
-             << QStringLiteral("kwintabbox")
+             << QStringLiteral("ukuikwintabbox")
 #endif
-             << QStringLiteral("kwinscreenedges")
-             << QStringLiteral("kwinscripts")
+             << QStringLiteral("ukuikwinscreenedges")
+             << QStringLiteral("ukuikwinscripts")
              ;
     return args;
 }
@@ -317,7 +317,7 @@ void UserActionsMenu::init()
                 QStringList args;
                 args << QStringLiteral("--icon") << QStringLiteral("preferences-system-windows");
                 const QString path = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
-                                                            QStringLiteral("kservices5/kwinfocus.desktop"));
+                                                            QStringLiteral("kservices5/ukuikwinfocus.desktop"));
                 if (!path.isEmpty()) {
                     args << QStringLiteral("--desktopfile") << path;
                 }

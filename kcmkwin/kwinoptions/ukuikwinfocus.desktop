@@ -2,11 +2,11 @@
 Icon=preferences-system-windows
 Type=Service
 X-KDE-ServiceTypes=KCModule
-Exec=kcmshell5 kwinfocus
+Exec=kcmshell5 ukuikwinfocus
 X-DocPath=kcontrol/windowbehaviour/index.html#action-focus
 
-X-KDE-Library=kcm_kwinoptions
-X-KDE-PluginKeyword=kwinfocus
+X-KDE-Library=kcm_ukuikwinoptions
+X-KDE-PluginKeyword=ukuikwinfocus
 
 Name=Window Focus Behavior
 Name[ca]=Comportament del focus de les finestres

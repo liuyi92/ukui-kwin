@@ -2,11 +2,11 @@
 Icon=preferences-system-windows-actions
 Type=Service
 X-KDE-ServiceTypes=KCModule
-Exec=kcmshell5 kwinadvanced
+Exec=kcmshell5 ukuikwinadvanced
 X-DocPath=kcontrol/windowbehaviour/index.html#action-advanced
 
-X-KDE-Library=kcm_kwinoptions
-X-KDE-PluginKeyword=kwinadvanced
+X-KDE-Library=kcm_ukuikwinoptions
+X-KDE-PluginKeyword=ukuikwinadvanced
 
 Name=Advanced Window Behavior
 Name[ca]=Comportament avançat de les finestres

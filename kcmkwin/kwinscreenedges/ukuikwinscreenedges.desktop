@@ -1,11 +1,11 @@
 [Desktop Entry]
-Exec=kcmshell5 kwinscreenedges
+Exec=kcmshell5 ukuikwinscreenedges
 Icon=preferences-desktop-gestures-screenedges
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kcontrol/kwinscreenedges/index.html
 
-X-KDE-Library=kcm_kwinscreenedges
+X-KDE-Library=kcm_ukuikwinscreenedges
 X-KDE-ParentApp=kcontrol
 
 X-KDE-System-Settings-Parent-Category=desktopbehavior

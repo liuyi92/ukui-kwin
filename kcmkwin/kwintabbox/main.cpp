@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************/
 #include "main.h"
 #include <effect_builtins.h>
-#include <kwin_effects_interface.h>
+#include <ukui_kwin_effects_interface.h>
 
 // Qt
 #include <QtDBus>

@@ -38,7 +38,7 @@
 
 #include "windows.h"
 #include <effect_builtins.h>
-#include <kwin_effects_interface.h>
+#include <ukui_kwin_effects_interface.h>
 
 // kwin config keywords
 #define KWIN_FOCUS                 "FocusPolicy"

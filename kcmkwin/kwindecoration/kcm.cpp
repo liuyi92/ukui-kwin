@@ -37,7 +37,7 @@
 
 #include <KNewStuff3/KNS3/DownloadDialog>
 
-#include "kwindecorationsettings.h"
+#include "ukuikwindecorationsettings.h"
 
 K_PLUGIN_FACTORY_WITH_JSON(KCMKWinDecorationFactory, "ukuikwindecoration.json", registerPlugin<KCMKWinDecoration>();)
 

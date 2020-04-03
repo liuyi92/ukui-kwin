@@ -28,6 +28,6 @@ kcoreaddons_desktop_to_json(kcm_ukuikwindecoration "ukuikwindecoration.desktop" 
 install(FILES ukuikwindecorationsettings.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 install(FILES ukuikwindecoration.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
 install(FILES ukui-window-decorations.knsrc DESTINATION ${KDE_INSTALL_KNSRCDIR})
-install(TARGETS kcm_ukuikwindecoration DESTINATION ${KDE_INSTALL_PLUGINDIR})
+install(TARGETS kcm_ukuikwindecoration DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
 
 kpackage_install_package(package kcm_ukuikwindecoration kcms)

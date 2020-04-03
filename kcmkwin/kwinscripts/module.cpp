@@ -45,10 +45,10 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     ui(new Ui::Module),
     m_kwinConfig(KSharedConfig::openConfig("ukui-kwinrc"))
 {
-    KAboutData *about = new KAboutData("kwin-scripts",
-                                       i18n("KWin Scripts"),
+    KAboutData *about = new KAboutData("ukuikwin-scripts",
+                                       i18n("UKUIKWin Scripts"),
                                        global_s_versionStringFull,
-                                       i18n("Configure KWin scripts"),
+                                       i18n("Configure UKUIKWin scripts"),
                                        KAboutLicense::GPL_V2);
 
     about->addAuthor(i18n("Tamás Krutki"));

@@ -2,9 +2,9 @@
 Type=Service
 X-KDE-ServiceTypes=KCModule
 Icon=preferences-system-tabbox
-Exec=kcmshell5 kwintabbox
+Exec=kcmshell5 ukuikwintabbox
 X-DocPath=kcontrol/kwintabbox/index.html
-X-KDE-Library=kcm_kwintabbox
+X-KDE-Library=kcm_ukuikwintabbox
 X-KDE-ParentApp=kcontrol
 
 X-KDE-System-Settings-Parent-Category=windowmanagement

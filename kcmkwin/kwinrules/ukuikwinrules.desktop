@@ -1,11 +1,11 @@
 [Desktop Entry]
-Exec=kcmshell5 kwinrules
+Exec=kcmshell5 ukuikwinrules
 Icon=preferences-system-windows-actions
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kcontrol/windowspecific/index.html
 
-X-KDE-Library=kcm_kwinrules
+X-KDE-Library=kcm_ukuikwinrules
 X-KDE-ParentApp=kcontrol
 
 X-KDE-System-Settings-Parent-Category=windowmanagement

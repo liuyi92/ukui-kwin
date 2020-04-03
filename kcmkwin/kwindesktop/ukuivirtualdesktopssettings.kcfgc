@@ -1,4 +1,4 @@
-File=virtualdesktopssettings.kcfg
+File=ukuivirtualdesktopssettings.kcfg
 ClassName=VirtualDesktopsSettings
 Mutators=true
 DefaultValueGetters=true

@@ -1,16 +1,16 @@
 # KI18N Translation Domain for this library
-add_definitions(-DTRANSLATION_DOMAIN=\"kcmkwinrules\")
+add_definitions(-DTRANSLATION_DOMAIN=\"kcmukuikwinrules\")
 add_definitions(-DKCMRULES)
 ########### next target ###############
 
 include_directories(../../)
-set(kwinrules_MOC_HDRS yesnobox.h ../../cursor.h ../../plugins/platforms/x11/standalone/x11cursor.h)
-qt5_wrap_cpp(kwinrules_MOC_SRCS ${kwinrules_MOC_HDRS})
-set(kwinrules_SRCS ruleswidget.cpp ruleslist.cpp kwinsrc.cpp detectwidget.cpp ${kwinrules_MOC_SRCS})
+set(ukuikwinrules_MOC_HDRS yesnobox.h ../../cursor.h ../../plugins/platforms/x11/standalone/x11cursor.h)
+qt5_wrap_cpp(ukuikwinrules_MOC_SRCS ${kwinrules_MOC_HDRS})
+set(ukuikwinrules_SRCS ruleswidget.cpp ruleslist.cpp kwinsrc.cpp detectwidget.cpp ${ukuikwinrules_MOC_SRCS})
 
-ki18n_wrap_ui(kwinrules_SRCS ruleslist.ui detectwidget.ui editshortcut.ui ruleswidgetbase.ui)
+ki18n_wrap_ui(ukuikwinrules_SRCS ruleslist.ui detectwidget.ui editshortcut.ui ruleswidgetbase.ui)
 
-set(ukui_kwin_rules_dialog_KDEINIT_SRCS main.cpp ${kwinrules_SRCS})
+set(ukui_kwin_rules_dialog_KDEINIT_SRCS main.cpp ${ukuikwinrules_SRCS})
 
 kf5_add_kdeinit_executable(ukui_kwin_rules_dialog ${ukui_kwin_rules_dialog_KDEINIT_SRCS})
 
@@ -43,14 +43,14 @@ install(TARGETS ukui_kwin_rules_dialog DESTINATION ${LIBEXEC_INSTALL_DIR})
 
 ########### next target ###############
 
-set(kcm_kwinrules_PART_SRCS kcm.cpp ${kwinrules_SRCS})
+set(kcm_ukuikwinrules_PART_SRCS kcm.cpp ${ukuikwinrules_SRCS})
 
-add_library(kcm_kwinrules MODULE ${kcm_kwinrules_PART_SRCS})
+add_library(kcm_ukuikwinrules MODULE ${kcm_ukuikwinrules_PART_SRCS})
 
-target_link_libraries(kcm_kwinrules ${kcm_libs} ${kwin_kcm_rules_XCB_LIBS})
+target_link_libraries(kcm_ukuikwinrules ${kcm_libs} ${kwin_kcm_rules_XCB_LIBS})
 
-install(TARGETS kcm_kwinrules DESTINATION ${PLUGIN_INSTALL_DIR}/ukui-kwin)
+install(TARGETS kcm_ukuikwinrules DESTINATION ${PLUGIN_INSTALL_DIR})
 
 ########### install files ###############
 
-install(FILES kwinrules.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ukui-kwin)
+install(FILES ukuikwinrules.desktop DESTINATION ${SERVICES_INSTALL_DIR})

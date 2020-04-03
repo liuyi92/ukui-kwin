@@ -1,12 +1,12 @@
 [Desktop Entry]
-Exec=kcmshell5 kwinoptions
+Exec=kcmshell5 ukuikwinoptions
 Icon=preferences-system-windows-actions
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kcontrol/windowbehaviour/index.html
 
-X-KDE-Library=kcm_kwinoptions
-X-KDE-PluginKeyword=kwinoptions
+X-KDE-Library=kcm_ukuikwinoptions
+X-KDE-PluginKeyword=ukuikwinoptions
 X-KDE-ParentApp=kcontrol
 
 X-KDE-System-Settings-Parent-Category=windowmanagement
