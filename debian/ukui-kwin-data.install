@@ -12,6 +12,7 @@ usr/share/kpackage/kcms/kcm_ukuikwin_virtualdesktops/
 usr/share/kpackage/kcms/kcm_ukuikwindecoration/
 usr/share/kservices5/kcm_ukuikwin_effects.desktop
 usr/share/kservices5/kcm_ukuikwin_virtualdesktops.desktop
+usr/share/kservices5/ukuikwin*.desktop
 usr/share/kservices5/ukui-kwin/
 usr/share/kservicetypes5/ukui-kwin/
 usr/share/ukui-kwin/
