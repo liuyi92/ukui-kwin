@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=ServiceType
-X-KDE-ServiceType=KWin/Decoration
+X-KDE-ServiceType=UKUIKWin/Decoration
 
 Comment=KWin Window Decoration
 Comment[ar]=زخارف نوافذ «نوافذك»
