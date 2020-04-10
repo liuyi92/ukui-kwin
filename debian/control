@@ -126,7 +126,7 @@ Description: UKUI window manager, common files
 
 Package: ukui-kwin-data
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: plasma-framework, ${misc:Depends}, ${shlibs:Depends}
 Recommends: python3,
             qml-module-qtmultimedia,
             qml-module-qtquick-controls,
